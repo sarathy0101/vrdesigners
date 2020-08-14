@@ -1,0 +1,121 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>
+        About Us
+    </title>
+    <link rel="stylesheet" type="text/css" href="about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/icon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".hamburger .fa").click(function() {
+                document.querySelector(".topbar").classList.toggle("show");
+            })
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 20 & $(window).width() > 1190) {
+                    $('header').addClass('small');
+                    $('.hamburger .fa').css("margin-top", "10px");
+                    $('.logo img').hide(1000);
+
+                } else {
+                    $('.logo img').show(1000);
+
+                    $('header').removeClass('small');
+
+
+                }
+            });
+            $("a").click(function() {
+                $("a").removeClass("active");
+                $(this).addClass("active");
+                if ($(window).width() <= 1190) {
+                    document.querySelector(".topbar").classList.toggle("show");
+                }
+
+            })
+
+        })
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container1">
+            <div class="row">
+                <div class="logo">
+                    <img src="images/logo.png">
+                </div>
+                <div class="hamburger">
+                    <img class="fa" src="images/hamburger.png">
+                </div>
+                <div class="topbar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html" class="active">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="design.html"> Designs </a></li>
+                        <li><a href="location.html">Locations</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="about-section">
+            <div class="inner-container">
+                <h1>
+                    About Us
+                </h1>
+                <p class="text">
+                    Ver Designs is a full service design and merchandising firm. We partner with builders and developers, collaborating to make each project distinct and notable. We collectively work with architects, contractors, landscape designers and marketing continually throughout the duration of the project to ensure succe
+                </p>
+            </div>
+        </div>
+        <div class="design">
+            <h1>
+                Exclusive Designs and project Repesentations
+            </h1>
+            <div class="image-gallery">
+                <img src="https://cdn.glitch.com/4528cf86-de61-4ac1-990a-c2464086297c%2Fimages%20(14).jpeg?v=1594127501949">
+                <img src="https://cdn.glitch.com/4528cf86-de61-4ac1-990a-c2464086297c%2Fimages%20(24).jpeg?v=1594127396071">
+                <img src="https://cdn.glitch.com/4528cf86-de61-4ac1-990a-c2464086297c%2Fimages%20(26).jpeg?v=1594127374621">
+                <img src="https://cdn.glitch.com/4528cf86-de61-4ac1-990a-c2464086297c%2Fimages%20(20).jpeg?v=1594127436282">
+                <img src="https://cdn.glitch.com/4528cf86-de61-4ac1-990a-c2464086297c%2Fimages%20(22).jpeg?v=1594127427079">
+                <img src="https://cdn.glitch.com/4528cf86-de61-4ac1-990a-c2464086297c%2Fimages%20(18).jpeg?v=1594127458217">
+                <img src="https://cdn.glitch.com/4528cf86-de61-4ac1-990a-c2464086297c%2Fimages%20(16).jpeg?v=1594127490362">
+                <img src="https://cdn.glitch.com/4528cf86-de61-4ac1-990a-c2464086297c%2Fimages%20(27).jpeg?v=1594127364775">
+                <img src="https://cdn.glitch.com/4528cf86-de61-4ac1-990a-c2464086297c%2Fimages%20(28).jpeg?v=1594222515590">
+                <img src="https://cdn.glitch.com/4528cf86-de61-4ac1-990a-c2464086297c%2Fmodern-interior-design-ideas-brown-colors-21.jpg?v=1594224822830">
+                <img src="https://cdn.glitch.com/4528cf86-de61-4ac1-990a-c2464086297c%2Fimages%20(10).jpeg?v=1594104812535">
+                <img src="https://cdn.glitch.com/4528cf86-de61-4ac1-990a-c2464086297c%2Fimage2.jpg?v=1594225599575">
+                <img src="https://cdn.glitch.com/4528cf86-de61-4ac1-990a-c2464086297c%2Fimages%20(30).jpeg?v=1594225899223">
+                <img src="https://cdn.glitch.com/4528cf86-de61-4ac1-990a-c2464086297c%2Fimages%20(29).jpeg?v=1594225908211">
+                <img src="https://cdn.glitch.com/4528cf86-de61-4ac1-990a-c2464086297c%2Fimage3.jpg?v=1594226226235">
+                <img src="https://i.pinimg.com/originals/9b/4b/42/9b4b4260a69248344b8e27ae572a4569.jpg">
+                <img src="https://homebnc.com/homeimg/2017/08/005-living-room-color-scheme-ideas-color-harmony-homebnc.jpg">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSYG34jyiGFNROu_4ItBr8si3h7J00-Pz3AyQ&usqp=CAU">
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div id="copyrightsid" class="copyrights">
+            All Rights Reserved @ 2020 VR Designs
+        </div>
+        <div class="contactlinks">
+            <div><a href="#"><img src="footerimages/facebook.svg"></a></div>
+            <div><a href="#"><img src="footerimages/instagram.png"></a></div>
+            <div><a href="#"><img src="footerimages/youtube.svg"></a></div>
+            <div><a href="#"><img src="footerimages/linkedin.png"></a></div>
+            <div><a href="#"><img src="footerimages/twitter.png"></a></div>
+        </div>
+    </footer>
+</body>
+
+</html>
